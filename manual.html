@@ -1,0 +1,613 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+  </head>
+  <body>
+
+    <div id="menu">
+      <ul>
+        <li><a href="#sec1">1. What is Polyphylla</a></li>
+        <li><a href="#sec2">2. Source Tab</a>
+          <ul>
+            <li><a href="#sec2-1">2.1 Oscillator Modes</a>
+              <ul>
+                <li><a href="#sec2-1-1">2.1.1 Morph</a></li>
+                <li><a href="#sec2-1-2">2.1.2 Atonal</a></li>
+                <li><a href="#sec2-1-3">2.1.3 Manual</a></li>
+              </ul>
+            </li>
+            <li><a href="#sec2-2">2.2 Oscillator Settings</a>
+              <ul>
+                <li><a href="#sec2-2-1">2.2.1 Brightness</a></li>
+                <li><a href="#sec2-2-2">2.2.2 Octave</a></li>
+                <li><a href="#sec2-2-3">2.2.3 Glide</a></li>
+              </ul>
+            </li>
+            <li><a href="#sec2-3">2.3 Noise Exciter</a></li>
+            <li><a href="#sec2-4">2.4 Filter</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#sec3">3. Motion Tab</a>
+          <ul>
+            <li><a href="#sec3">3.1 Motion Effects</a>
+              <ul>
+                <li><a href="#sec3-1-1">3.1.1 Sweep</a></li>
+                <li><a href="#sec3-1-2">3.1.2 Attractor</a></li>
+                <li><a href="#sec3-1-3">3.1.3 Deform</a></li>
+                <li><a href="#sec3-1-4">3.1.4 Drift</a></li>
+              </ul>
+            </li>
+            <li><a href="#sec3-2">3.2 Motion Motif Editor</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#sec4">4. Effects</a>
+          <ul>
+            <li><a href="#sec4-1">4.1 Harmony Effect</a></li>
+            <li><a href="#sec4-2">4.2 Miscellaneous Effect</a>
+              <ul>
+                <li><a href="#sec4-2-1">4.2.1 Ring Modulator</a></li>
+                <li><a href="#sec4-2-2">4.2.2 Chorus</a></li>
+                <li><a href="#sec4-2-3">4.2.3 Reverb</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="#sec5">5. Modulation</a>
+          <ul>
+            <li><a href="#sec5-1">5.1 Modulation Scalar</a></li>
+            <li><a href="#sec5-2">5.2 Modulation Ring</a></li>
+            <li><a href="#sec5-3">5.3 Modulation Sources</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#sec6">6. Visualizer</a>
+          <ul>
+            <li><a href="#sec6-1">6.1 Spectrum View</a></li>
+            <li><a href="#sec6-2">6.2 Motion View</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Home</a></li>
+      </ul>
+    </div>
+
+
+
+
+    <div id="content">
+      <div id="logo">
+        <img alt="polyphylla logo" src="images/polyphylla-logo-white-bg.png">
+        <h1>Reference Manual</h1>
+      </div>
+
+      <h2 id="sec1">1. What is Polyphylla?</h2>
+
+      <p>Polyphylla is an eight-voice additive synthesizer with up to 120 overtones per voice. It enables users to intuitively design and sculpt sounds with a unique visual interface. The user shapes the overtones of the sound by drawing a Motion Motif directly into the plugin window. This Motif is further refined by fractal-inspired algorithms to create lush, organic and evolving sounds.</p>
+
+      <img alt="" class="rounded" src="images/tabs/overview.png">
+
+      <h2 id="sec2">2. Source Tab</h2>
+
+      <p><img class="rounded" src="images/tabs/1-source_tab.png" width="516" height="110" alt=""
+            name="MorphMode"
+            id="MorphMode" /></p>
+
+      <p class="info">Defines the fundamental character of the sound</p>
+
+      <p>The source sound can be created with the Oscillator and can be optionally modified by the Noise exciter.</p>
+
+      <h3 id="sec2-1">2.1 Oscillator Modes</h3>
+      <p>The Oscillator offers three ways to create the source sound:</p>
+
+      <h4 id="sec2-1-1">2.1.1 Morph</h4>
+
+      <p><img class="rounded" src="images/OSCViews/OSC-Morph.png" width="201" height="90" alt=""
+            name="MorphMode"
+            id="MorphMode" /></p>
+
+      <p class="info">Morphs between fixed waveforms - suitable for basses, strings and pads.</p>
+
+      <p>1. This oscillator mode morphs between a square wave on the right and your selection of one of three wave types on the left (sawtooth, pulse, or triangle).</p>
+
+      <p>2. Use the dial on the right side to change the proportion of the waveform of your choice and a square wave. For example, when a Sawtooth is selected, with the Saw/Square Ratio dial at 30%, the sound is composed of 30% of a Sawtooth and 70% of a Square.</p>
+
+      <p class="tip">Tip: modulate the value of the ratio dial to create changing timbre. To learn more about modulation, see the <a href="#sec5">Modulation section</a>.</p>
+
+      <h4 id="sec2-1-2">2.1.2 Atonal</h4>
+      <p><img class="rounded" src="images/OSCViews/OSC-Atonal-index.png" alt=""
+            width="211" height="92" /></p>
+
+      <p class="info">Randomly choose inharmonic overtones - suitable for drone, pad, or bell-like sounds.</p>
+
+      <p>Atonal uses 5 partials - one fundamental frequency and 4 overtones. The fundamental frequency is fixed, while the frequency (represented as <b>Harmony Ratio</b>) of the 4 overtones can be detuned freely with the detune dial.</p>
+
+      <h5 id="harmony_ratio"><b>Harmony Ratio</b></h5>
+
+      <p>The Harmony Ratio of a partial is calculated in proportion to the fundamental frequency. For example, if the fundamental frequency is 440 Hz, and the partial frequency is 880 Hz, the partial's Harmony Ratio is 2.</p>
+
+      <p>There are harmonic and inharmonic partials. Harmonic partials are partials with a whole-numbered (1, 2, 3.. etc) Harmony Ratio. While inharmonic partials are with non whole-numbered Harmony ratio (ex. 1.23, 1.33, etc). If the fundamental frequency is 220 Hz, then a partial of 440 Hz is a harmonic partial, while 550 Hz is an inharmonic partial.</p>
+
+      <p>With pitched music instruments like piano, guitar, or clarinet, they are composed of mainly harmonic partials. And bell or percussions are made of inharmonic partials.</p>
+
+      <table>
+      <tr>
+        <td>1. Harmony Ratio/Overtone Frequency</td>
+        <td>The number displayed above each Detune Dial are the Harmony Ratio of the overtones, which can be understood as the frequency of the overtones - when the number gets higher, the overtone frequency increases. The closer the ratio is to a whole number (ie. 1, 2, 3, etc..), the more harmonious the overall tone would be. See <a href="#harmony_ratio"><b>Harmony Ratio</b></a> for more information.</td>
+      </tr>
+      <tr>
+        <td>2. Detune Dial</td>
+        <td>The dial detunes the overtone frequency within one octave.</td>
+      </tr>
+      <tr>
+        <td>3. Spread</td>
+        <td>The minimum distance between overtones. Use higher value to generate more open and harmonic tones. Use lower value to generate more experimental and drony tones.</td>
+      </tr>
+      <tr>
+        <td>4. Overtones Randomizer</td>
+        <td>Randomizes the Harmony Ratio of the 4 overtones.</td>
+      </tr>
+      <tr>
+        <td>5. Harmony Ratio Presets</td>
+        <td>Click to apply Harmony Ratio presets for the overtones.</td>
+      </tr>
+      </table>
+
+      <h4 id="sec2-1-3">2.1.3 Manual Mode</h4>
+      <p><img class="rounded" src="images/OSCViews/OSC-Manual.png" alt=""
+            width="212" height="89"/></p>
+
+      <p>Click and drag to adjust the amplitude of the partials</p>
+
+      <h3 id="sec2-2">2.2 Oscillator Settings</h3>
+
+      <p><img class="rounded" src="images/OSCViews/OSC-Settings.png" alt=""
+            width="112" height="88" /></p>
+
+      <table>
+      <tr>
+      <td id="sec2-2-1">2.2.1 Brightness</td>
+      <td>This changes the tone color. Higher value makes the tone brighter, and lower value makes the tone darker.</td>
+</tr>
+<tr>
+      <td id="sec2-2-2">2.2.2 Octave</td>
+      <td>Octave - Transposes the tuning up or down in octave increments.</td>
+</tr>
+<tr>
+      <td id="sec2-2-3">2.2.3 Glide</td>
+      <td>The time taken to glide from one note to another. With <b>Legato</b> enabled, gliding will only occur if the second note is played before the first note is released.
+      </td>
+</tr>
+      </table>
+
+      <h3 id="sec2-3">2.3 Noise Exciter</h3>
+
+      <p><img class="rounded" src="images/NoiseExciter/Exciter.png" alt=""
+            width="226" height="112"/></p>
+
+      <p class="info">With the Noise Exciter the source sound can be enriched with non-deterministic components of natural sounds, such as the noise generated by sliding a bow against a string, wind sounds and the noise components of percussive sounds.</p>
+
+      <table>
+      <tr>
+        <td>1. Noise Exciter Type Switch</td>
+        <td>Click to toggle the tone of the noise between Bright and Warm</td>
+      </tr>
+      <tr>
+        <td>2. Dry/Wet Mix</td>
+        <td>The balance between the dry oscillator signal and the modulated noise signal.</td>
+      </tr>
+      <tr>
+        <td>3. Overdrive</td>
+        <td>Distort the noise further</td>
+      </tr>
+      </table>
+
+      <h3 id="sec2-4">2.4 Oscillator Filter and Noise Filter</h3>
+
+      <p><img class="rounded" src="images/Filter.png" alt=""
+            width="138" height="107"/></p>
+
+      <p>Both the oscillator and the noise exciter have a dedicated filter. The low-pass filter is the Diode filter - a Moog style ladder filter, which has a warm/colorful character.</p>
+
+      <h4>2.4.1. Cut-Off Frequency</h4>
+      <p>The frequency at which the filter will begin to attenuate signals</p>
+
+      <h4>2.4.2. Resonance</h4>
+      <p>Emphasize the frequency lying near the filter's cut-off frequency</p>
+
+
+      <h2 id="sec3">3. Motion Tab</h2>
+      <h3 id="sec3-1">3.1 Motion Effects</h2>
+      <p><img class="rounded" src="images/tabs/2-motion_tab.png" alt=""
+            width="515" height="107"/></p>
+
+      <p>In the Motion Tab a Motion Effect is created and applied to the source sound. The user draws the Motion Motif into the motif editor and the resulting motion effect is applied individually to each partial. As the sound plays the Motion Visualizer provides a visualization of it. Polyphylla offers 4 Motion Effects:</p>
+
+      <h4 id="sec3-1-1">3.1.1 Sweep</h4>
+
+      <p><img class="rounded" src="images/MotionEffects/Sweep.png" alt=""
+            width="271" height="107" /></p>
+      <p>Offsets the start time of the Motion Motif for each partial</p>
+
+      <h5>Amount</h5>
+      <p>Global dial for all Sweep Modes. It scales the amount of offset time applied to all partials. Higher value results in more dramatic offset times</p>
+
+      <h5>Sweep Modes</h5>
+      <ul>
+      <li>1. Down - linearly increase the offset time as the partial frequency (ie. the Harmony Ratio) increases</li>
+      <li>2. Up - linearly decrease the offset time as the partial frequency (ie. the Harmony Ratio) increases</li>
+      <li>3. Curve - non-linearly offset partials. The offset amount changes as a curve. The shape of the curve can be modified by Phase and Density
+        <ul>
+          <li>Phase - shift the phase of the curve, which changes the offset amount applied to partials</li>
+          <li>Density - set the density (also called period or wavelength) of the sweep curve. Lower values result in more dramatic changes across the partial spectrum, while higher values result in smoother changes.</li>
+        </ul>
+      </li>
+      <li>4. Random - randomly offset partials.
+        <ul>
+          <li>Seeds - Each variety is a different set of random values to offset partials</li>
+          <li>Offset - Change the mapping between the offset amounts and the partials</li>
+        </ul>
+      </li>
+      </ul>
+
+      <h4 id="sec3-1-2">3.1.2 Attractor</h4>
+      <p><img class="rounded" src="images/MotionEffects/Attractor.png" alt=""
+            width="265" height="108"/></p>
+      <p>Attractor - stretches and bends the Motion Motif with an attractor.</p>
+      <ul>
+        <li>1. Attractor Location X-Y Control - click and drag along to change the location of the attractor. The horizontal/vertical axis represent playback time/magnitude respectively.</li>
+        <li>2. Offset - this changes the location of the attractor among partials</li>
+      </ul>
+
+      <h4 id="sec3-1-3">3.1.3 Deform</h4>
+
+      <p><img class="rounded" src="images/MotionEffects/Deform.png" alt=""
+            width="227" height="109"/></p>
+
+      <p>Semi-randomly deform the Motion Motif for for each partial.</p>
+
+      <table>
+        <tr>
+          <td>Deform</td>
+          <td>The amount of deform applied to all partials</td>
+        </tr>
+        <tr>
+          <td>Randomize</td>
+          <td>How random the original Motion Motif is deformed. High value results in more dramatic timbre movement, while use low value to create more subtle, organic timbral changes.</td>
+        </tr>
+      </table>
+
+      <h4 id="sec3-1-4">3.1.4 Drift</h4>
+
+      <p><img class="rounded" src="images/MotionEffects/Drift.png" alt=""
+            width="169" height="109"/></p>
+
+      <p>Smoothly change the magnitude of each individual partial over time</p>
+      <ul>
+        <li>Speed - How quickly the magnitude of individual partials changes over time</li>
+      </ul>
+
+      <h3 id="sec3-2">3.2 Motion Motif Editor</h2>
+
+      <p><img class="rounded" src="images/MotionEffects/MotionMotifEditor.png" alt=""
+            width="252" height="89" /></p>
+
+      <p>Click and drag to draw a curve as a Motion Motif. Depending on the Motion Effect in use, it will be applied differently to each partial.</p>
+
+      <table>
+        <tr>
+          <td>Presets</td>
+          <td>Factory presets for the Motion Motif</td>
+        </tr>
+        <tr>
+          <td>Loop Mode</td>
+          <td>This sets whether to loop the Motion Envelope for the duration of note, and if so, how.</td>
+        </tr>
+        <tr>
+          <td>Speed</td>
+          <td>How many cycles per second to play back the Motion Effect.</td>
+        </tr>
+      </table>
+
+      <h2 id="sec4">4. Effects</h2>
+
+      <p><img class="rounded" src="images/tabs/3-effect_tab.png" alt=""
+            width="517" height="109" /></p>
+
+      <p class="info">Add effects like harmony modulation and spatialization</p>
+
+      <h3 id="sec4-1">4.1 Harmony Effect</h3>
+
+      <table>
+
+        <tr>
+          <td></td>
+          <td class="image"><img src="images/HarmonyEffects/Unison.png"
+            width="261"
+            height="113"
+            alt="" /></td>
+        </tr>
+
+        <tr>
+          <td class="larger">Unison</td>
+          <td>Fatten up the sound by adding two slightly detuned partials for each existing one.</td>
+        </tr>
+        <tr>
+          <td>   Detune</td>
+          <td>Adjust the detune amount to the partials colored red in the Spectrum View.</td>
+        </tr>
+        <tr>
+          <td>   Wet</td>
+          <td>The balance between the original partials and the detuned partials. In the Spectrum View, the original and detuned partials are colored in white and red respectively.</td>
+        </tr>
+      </table>
+
+      <table>
+
+        <tr>
+          <td></td>
+          <td class="image"><img src="images/HarmonyEffects/Interval.png"
+            width="264"
+            height="108"
+            alt="" /></td>
+        </tr>
+
+        <tr>
+          <td class="larger">Interval</td>
+          <td>Detune harmonics matching the specified interval.</td>
+        </tr>
+        <tr>
+          <td>   Detune</td>
+          <td>Adjust the detune amount to the partials color red in the Spectrum View.</td>
+        </tr>
+        <tr>
+          <td>   Target</td>
+          <td>Detune All/Odd/Even/Octave/Fifth partials.
+          <ul>
+            <li>All - detune all partials</li>
+            <li>Odd - detunes the odd partials (1st, 3rd, 5th, 7th, etc.)</li>
+            <li>Even - detunes the even partials (2nd, 4th, 6th, 8th, etc)</li>
+            <li>Octave/Fifth detunes partials that match certain tuning. For example, Octave detunes all partials that are the octaves of the fundamental frequency.</li>
+          </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>   Volume</td>
+          <td>Adjust the volume of the detuned partials.</td>
+        </tr>
+      </table>
+
+      <table>
+
+        <tr>
+          <td></td>
+          <td class="image"><img src="images/HarmonyEffects/Mask.png"
+            width="264"
+            height="107"
+            alt="" /></td>
+        </tr>
+
+        <tr>
+          <td class="larger">Mask</td>
+          <td>detune partials covered by the mask</td>
+        </tr>
+        <tr>
+          <td>   Detune</td>
+          <td>Adjust the detune amount to the partials color red in the Spectrum View.</td>
+        </tr>
+        <tr>
+          <td>   Size </td>
+          <td>Specifies the width of the mask. With higher value to detune more partials.</td>
+        </tr>
+        <tr>
+          <td>   Offset </td>
+          <td>Shift the starting position of the mask.</td>
+        </tr>
+        <tr>
+          <td>   Random</td>
+          <td>randomly detune partials.</td>
+        </tr>
+        <tr>
+          <td>   Detune </td>
+          <td>Adjust the detune amount to the partials color red in the Spectrum View.</td>
+        </tr>
+        <tr>
+          <td>   Smoothness</td>
+          <td>How smooth the partials are detuned over time.</td>
+        </tr>
+      </table>
+
+      <table>
+
+        <tr>
+          <td></td>
+          <td class="image"><img src="images/HarmonyEffects/Threshold.png"
+            width="264"
+            height="109"
+            alt="" /></td>
+        </tr>
+
+        <tr>
+          <td class="larger">Threshold</td>
+          <td>Detunes any partials with volume greater than the minimum value</td>
+        </tr>
+        <tr>
+          <td>   Detune</td>
+          <td>Adjust the detune amount to the partials color red in the Spectrum View.</td>
+        </tr>
+        <tr>
+          <td>   Minimum Volume</td>
+          <td>Detune only partials with volume higher than the specified amount</td>
+        </tr>
+        </table>
+
+      <h3 id="sec4-2">4.2 Miscellaneous Effects</h3>
+
+      <h4 id="sec4-2-1">4.2.1 Ring Modulator</h4>
+      <p class="info">Adding extra frequencies to the original signal. good for adding extra high frequencies for percussive sounds.</p>
+
+      <table>
+
+        <tr>
+          <td></td>
+          <td class="image"><img src="images/MiscEffects/Ring.png"
+            width="186"
+            height="108"
+            alt="" /></td>
+        </tr>
+
+        <tr>
+          <td>Dry/Wet Mix</td>
+          <td>The balance between the dry signal and the signal processed by Ring Modulator.</td>
+        </tr>
+        <tr>
+          <td>Frequency</td>
+          <td>The frequency that will be added to and subtracted from the input signal.</td>
+        </tr>
+      </table>
+
+
+      <h4 id="sec4-2-2">4.2.2 Chorus</h4>
+      <p class="info">Thicken the signal with the approach how a group of people singing in choir - blend the original signal and the same signal with constantly changing delay time</p>
+
+      <table>
+
+        <tr>
+          <td></td>
+          <td class="image"><img src="images/MiscEffects/Chorus.png"
+            width="249"
+            height="108"
+            alt="" /></td>
+        </tr>
+
+        <tr>
+          <td>Dry/Wet Mix </td>
+          <td>The balance between the dry signal and the signal processed by Chorus.</td>
+        </tr>
+        <tr>
+          <td>Feedback </td>
+          <td>The amount of processed signal feeds back into the input of Chorus.</td>
+        </tr>
+        <tr>
+          <td>Thickness </td>
+          <td>Increase the value to create a thicker tone. It removes the high frequency in the processed signal</td>
+        </tr>
+        <tr>
+          <td>Delay </td>
+          <td>Set the delay time of the signal. The delayed signal will interfere with the original signal to create slight pitch variation.</td>
+        </tr>
+        <tr>
+          <td>Delay Time Modulation Mode </td>
+          <td>This sets how the delay time is modulated over time. Regular Mode scales the delay time</td>
+        </tr>
+        <tr>
+          <td>Delay Time Modulation Amount </td>
+          <td>This sets the modulation amount applied to delay time. Higher amount makes delay time vary in a wider range, hence more dramatic changes of the pitch</td>
+        </tr>
+        <tr>
+          <td>Delay Time Modulation Rate </td>
+          <td>This sets how quickly the delay time is modulated. Higher rate generates more rapidly varying pitch.</td>
+        </tr>
+      </table>
+
+      <h4 id="sec4-2-3">4.2.3 Reverb</h4>
+      <p class="info">Enhance the original sound by adding natural room acoustics.</p>
+
+      <table>
+        <tr>
+          <td></td>
+          <td class="image"><img src="images/MiscEffects/Reverb.png"
+            width="206"
+            height="109"
+            alt="" /></td>
+        </tr>
+
+        <tr>
+          <td>Dry/Wet Mix</td>
+          <td>The balance between the dry signal and the signal processed by Reverb.</td>
+        </tr>
+        <tr>
+          <td>Size </td>
+          <td>The size of the virtual room. Larger sizes produces longer reverb times. Smaller room size produces a more metallic tone.</td>
+        </tr>
+        <tr>
+          <td>Decay </td>
+          <td>The time it takes for the reflection to die off.</td>
+        </tr>
+        <tr>
+          <td>Damping </td>
+          <td>Makes the overall tone brighter or warmer.</td>
+        </tr>
+        <tr>
+          <td>Diffuse </td>
+          <td>Increase diffuse amount to put early reflections closer together. Reduce Diffuse to create more discrete echoes.</td>
+        </tr>
+      </table>
+
+      <h2 id="sec5">5. Modulation</h2>
+      <p class="info">Modulation makes it possible to change the timbre rhythmically/randomly or to react to the way you play your midi controller. For example, change the Brightness by how hard you hit a key.</p>
+
+      <table>
+        <tr>
+          <td></td>
+          <td class="image"><img src="images/Modulation/Modulation.png"
+            width="65"
+            height="86"
+            alt="" /></td>
+        </tr>
+
+      <tr>
+      <td>Modulation Scalar</td>
+      <td>Scales the amount of modulation applied to the associated parameter. At the center there is no modulation. Move the control to the right to increase the amount of modulation. Move the control to the left to increase the amount of modulation, inverted.
+      </td>
+      </tr>
+
+      <tr>
+      <td>Modulation Ring </td>
+      <td>When a Modulation Source is in use, it shows the actual value the parameter is currently using.</td>
+      </tr>
+
+      <tr>
+      <td>Modulation Sources</td>
+      <td>
+        <ul>
+          <li>LFO</li>
+          <li>AMP ADSR</li>
+          <li>AUX ADSR</li>
+          <li>Mod Wheel</li>
+          <li>Aftertouch</li>
+          <li>Key-Tracking</li>
+          <li>Velocity</li>
+          <li>Mod-Wheel</li>
+          <li>Pitch-Bend</li>
+        </ul>
+      </td>
+      </tr>
+      </table>
+
+      <h2 id="sec6">6. Visualizer</h2>
+      <p class="info">The Polyphylla Motion Visualizer enables the user to work visually in designing sounds. There are two different view options.</p>
+
+      <h3 id="sec6-1">Spectrum View</h3>
+
+      <p><img class="rounded" src="images/Visualizer/SpectrumVisualizer3.png" width="186" height="171" alt=""
+          />
+      </p>
+
+      <p>The Spectrum Tab shows the default energy level of all frequencies used in the current sound. The height shows the magnitude of each frequency. Red lines indicate detuned partials, when the Harmony Effect is enabled in the Effects tab.</p>
+
+      <h3 id="sec6-2">Motion View</h3>
+
+      <p><img class="rounded" src="images/Visualizer/MotionVisualizer1.png" width="185" height="167" alt=""
+          />
+      </p>
+
+      <p>When a motion effect is enabled, the Motion Visualizer displays a visualization of the magnitudes of partials evolving over time. Each curve represents one partial, with the low frequency partials at the front and the high frequency partials to the rear. Time progresses from left to right.</p>
+
+    </div>
+
+  </body>
+</html>

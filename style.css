@@ -1,0 +1,99 @@
+a {
+  text-decoration: none;
+  color: #444;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+}
+ul {
+    list-style-type: square;
+}
+h2 {
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+body {
+  padding: 50px;
+  font-family: 'Ubuntu', sans-serif;
+}
+#logo {
+  text-align: center;
+}
+#menu {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+}
+#menu ul {
+  list-style-type: none;
+}
+#menu > ul {
+  padding-left: 0px;
+}
+#menu a:hover {
+  background-color:rgba(130, 95, 98, 0.8);
+  padding: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  margin-left:-3px;
+}
+
+#content {
+  margin-left: 280px;
+  max-width: 1000px;
+}
+#content .info {
+  font-style: italic;
+  font-weight: bold;
+  color: #238;
+}
+#content .tip {
+  color: green;
+}
+#content .TODO {
+  color: pink;
+}
+
+#content table {
+  border: 1px solid rgb(224, 224, 224);
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(250, 250, 250);
+  margin-bottom: 10px;
+}
+#content td {
+  padding-bottom: 5px;
+  padding-right: 10px;
+  border-bottom: 1px solid #DDD;
+}
+#content td:first-child {
+ font-size: 90%;
+ font-weight:bold;
+ width: 150px;
+ white-space:pre;
+}
+#content table tr:last-child td {
+    border-bottom: none;
+}
+#content table tr:last-child ul {
+    margin-bottom:  0px;
+}
+#content table ul {
+  margin-left: -21px;
+}
+#content td.larger {
+  font-size:110%;
+}
+#content td.image img {
+  border-radius: 5px;
+  border: 5px solid rgb(46,46,46);
+}
+#content img.rounded {
+  border-radius: 5px;
+  border: 5px solid rgb(46,46,46);
+}
