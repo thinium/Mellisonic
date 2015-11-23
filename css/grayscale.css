@@ -37,7 +37,7 @@ p {
   }
 }
 a {
-  color: #42DCA3;
+  color: #ed7a08;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -45,7 +45,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #8a4705;
 }
 .light {
   font-weight: 400;
@@ -58,7 +58,8 @@ a:focus {
   background-color: black;
 }
 .navbar-custom .navbar-brand {
-  font-weight: 700;
+  padding: 0px;
+  margin: 2px 0px;
 }
 .navbar-custom .navbar-brand:focus {
   outline: none;
@@ -222,7 +223,7 @@ a:focus {
   width: 100%;
   padding: 50px 0;
   color: white;
-  background: url(../images/downloads-bg.jpg) no-repeat center center scroll;
+  background: url(../images/Visualizer/MotionVisualizer1blurred.jpg) no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -257,16 +258,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid #ed7a08;
+  color: #ed7a08;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 1px solid #ed7a08;
   outline: none;
   color: black;
-  background-color: #42DCA3;
+  background-color: #ed7a08;
 }
 ul.banner-social-buttons {
   margin-top: 0;
