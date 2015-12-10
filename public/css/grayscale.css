@@ -50,6 +50,9 @@ a:focus {
 .light {
   font-weight: 400;
 }
+.navbar-header .navbar-toggle .fa {
+  font-size: 20px;
+}
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -134,6 +137,7 @@ a:focus {
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
+  padding-top: 0px;
 }
 .intro .intro-body .brand-heading {
   font-size: 40px;
@@ -145,6 +149,9 @@ a:focus {
   .intro {
     height: 100%;
     padding: 0;
+  }
+  .intro .intro-body {
+    padding-top: 80px;
   }
   .intro .intro-body .brand-heading {
     font-size: 100px;
@@ -338,4 +345,7 @@ body {
   box-shadow: 0px 0px 40px #001;
   max-width: 100%;
   max-height: 171px;
+}
+#mellisonic-logo {
+  padding: 5px 10px 3px;
 }
