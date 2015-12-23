@@ -12,7 +12,12 @@ $(window).scroll(function() {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });
-
+// Scale down retina images when window too small for them
+function resizeImages() {
+    if($('body').width() < 716) {
+      $('#main_pp_sc img').width($('body').width()-30);
+    }
+}
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
@@ -21,6 +26,11 @@ $(function() {
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
+    });
+
+    resizeImages();
+    $(window).resize(function() { 
+      resizeImages();
     });
 });
 
