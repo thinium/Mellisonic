@@ -240,11 +240,6 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
-#map {
-  width: 100%;
-  height: 200px;
-  margin-top: 100px;
-}
 @media (min-width: 767px) {
   .content-section {
     padding-top: 100px;
@@ -252,10 +247,6 @@ a:focus {
   }
   .download-section {
     padding: 100px 0;
-  }
-  #map {
-    height: 400px;
-    margin-top: 250px;
   }
 }
 .btn {
@@ -348,4 +339,26 @@ body {
 }
 #mellisonic-logo {
   padding: 5px 10px 3px;
+}
+#mc_embed_signup {
+  margin-top: 70px;
+}
+#mc_embed_signup label {
+  font-weight: normal;
+}
+#mc_embed_signup .email {
+  padding: 8px;
+  border: 1px solid gray;
+  color: #FFF;
+  background-color: #555;
+  height: 46px;
+  font-family: Michroma, sans-serif;
+  font-size: 18px;
+}
+#mc_embed_signup #mc-embedded-subscribe {
+  margin-top: -3px;
+}
+#mc_embed_signup input.mce_inline_error,
+#mc_embed_signup input.mce_inline_error:focus {
+  border-color: #AA0000 !important;
 }
