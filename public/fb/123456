@@ -7,8 +7,8 @@
 	<meta property="og:audio:type"				   content="audio/mpeg">
 	<meta property="og:audio:url"       	   	   content="https://hamoid.com/music/7min.mp3" />
 	<meta property="og:audio:secure_url"       	   content="https://hamoid.com/music/7min.mp3" />
-	<meta property="og:description"				   content="I made aaaaa song with Aitokaiku">
-	<meta property="music:duration" 			   content="30">
+	<meta property="og:description"				   content="I made a song with Aitokaiku">
+	<meta property="music:duration" 			   content="31">
 
 	<meta property="music:preview_url:type" 	   content="audio/mpeg">
 	<meta property="music:preview_url:url" 		   content="http://hamoid.com/music/7min.mp3">
