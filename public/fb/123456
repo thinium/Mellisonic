@@ -14,7 +14,6 @@
 	<meta property="music:preview_url:url" 		   content="http://hamoid.com/music/7min.mp3">
 	<meta property="music:preview_url:secure_url"  content="https://hamoid.com/music/7min.mp3">
 
-	<meta property="og:image"           		   content="http://www.aitokaiku.com/mftesting/vibe.jpg" />
 	<meta property="og:site_name"       		   content="Aitokaiku" />
 
 </head>
