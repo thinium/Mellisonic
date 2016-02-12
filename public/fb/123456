@@ -1,8 +1,8 @@
 <head>
-	<meta property="og:title"           		   content="Check out this song!" />
-	<meta property="fb:app_id"          		   content="1070434499675160" />
+	<meta property="og:title"           		   content="Check out this song2!" />
+	<meta property="fb:app_id"          		   content="1090589611005369" />
 	<meta property="og:type"            		   content="music.song" />
-	<meta property="og:url"                        content="http://www.aitokaiku.com/mftesting/123456" />
+	<meta property="og:url"                        content="https://www.hamoid.com/fb/123456" />
 
 	<meta property="og:audio:type"				   content="audio/mpeg">
 	<meta property="og:audio:url"       	   	   content="https://hamoid.com/music/7min.mp3" />
